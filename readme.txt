@@ -19,9 +19,8 @@ Disponível nos **Idiomas**:
 
 == Screenshots ==
 
-1. screenshot-1.png mostra o comentário do facebook no lugar do comentário nativo do WordPress.
-
-2. screenshot-2.png mostra as configurações do plugin.
+1. screenshot-1.png - Amostra do Comentário nativo do WordPress sendo substituíto pelo Comentário do Facebook.
+2. screenshot-2.png - Tela de configuração. Você pode encotrá-la em: Configurações / To Comments Facebook.
 
 
 == Installation ==
