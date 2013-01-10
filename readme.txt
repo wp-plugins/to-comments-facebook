@@ -24,8 +24,8 @@ Para configurações, acesse: Configurações / To Comments Facebook
 
 == Changelog ==
 
-=1.0.1=
-*Corrigindo nome de arquivos que estavam gerando erro na instalação do plugin.
+= 1.0.1 =
+* Corrigindo nome de arquivos que estavam gerando erro na instalação do plugin.
 
 = 1.0.0 =
 * Primeira versão
