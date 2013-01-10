@@ -4,7 +4,7 @@ Plugin Name: To Comments Facebook
 Plugin URI: 
 Description: Tira o sistema de comentário nativo do WordPress e adiciona o formato de comentários utilizando o Facebook.
 Author: Nova Brazil Agência Interativa
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://www.novabrazil.art.br
 */
 
