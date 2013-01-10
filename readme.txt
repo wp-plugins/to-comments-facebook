@@ -17,12 +17,6 @@ Disponível nos **Idiomas**:
 *   Português (Brasil)
 *   Inglês (Estados Unidos)
 
-== Screenshots ==
-
-1. screenshot-1.png - Amostra do Comentário nativo do WordPress sendo substituíto pelo Comentário do Facebook.
-2. screenshot-2.png - Tela de configuração. Você pode encotrá-la em: Configurações / To Comments Facebook.
-
-
 == Installation ==
 
 1.  Carregue o plugin em seu blog e Ative-o.
