@@ -17,6 +17,13 @@ Disponível nos **Idiomas**:
 *   Português (Brasil)
 *   Inglês (Estados Unidos)
 
+== Screenshots ==
+
+1. screenshot-1.png mostra o comentário do facebook no lugar do comentário nativo do WordPress.
+
+2. screenshot-2.png mostra as configurações do plugin.
+
+
 == Installation ==
 
 1.  Carregue o plugin em seu blog e Ative-o.
