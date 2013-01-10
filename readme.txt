@@ -3,7 +3,7 @@ Contributors: tihhgoncalves, bugotech
 Tags: comments, facebook, comentários
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 
 Tira o sistema de comentário nativo do WordPress e adiciona o formato de comentários utilizando o Facebook.
@@ -23,6 +23,9 @@ Para configurações, acesse: Configurações / To Comments Facebook
 
 
 == Changelog ==
+
+=1.0.1=
+*Corrigindo nome de arquivos que estavam gerando erro na instalação do plugin.
 
 = 1.0.0 =
 * Primeira versão
