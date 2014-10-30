@@ -3,7 +3,7 @@ Contributors: tihhgoncalves, bugotech
 Donate link:http://goo.gl/glsRg
 Tags: comments, facebook, comentários, hide
 Requires at least: 3.0
-Tested up to: 3.5
+Tested up to: 4.0
 Stable tag: 1.0.2
 
 Tira o sistema de comentário nativo do WordPress e adiciona o formato de comentários utilizando o Facebook.
