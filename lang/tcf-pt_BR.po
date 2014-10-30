@@ -1,15 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: To Comments Facebook v1.0.0\n"
+"Project-Id-Version: To Comments Facebook v1.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-01-08 15:53:34+0000\n"
+"PO-Revision-Date: 2014-10-30 23:15:40+0000\n"
 "Last-Translator: nbrazil <tihh.gon@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -19,58 +20,68 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: To Comments Facebook.php:75
+#: to-comments-facebook.php:88
 #@ tcf
 msgid "Preencha abaixo a configuração necessária para o funcionamento do Comentário do Facebook."
 msgstr "Preencha abaixo a configuração necessária para o funcionamento do Comentário do Facebook."
 
-#: To Comments Facebook.php:82
+#: to-comments-facebook.php:95
 #@ tcf
 msgid "Largura do Bloco"
 msgstr "Largura do Bloco"
 
-#: To Comments Facebook.php:91
+#: to-comments-facebook.php:104
 #@ tcf
 msgid "Código HTML exibido ANTES"
 msgstr "Código HTML exibido ANTES"
 
-#: To Comments Facebook.php:92
+#: to-comments-facebook.php:105
 #@ tcf
 msgid "Digite o código HTML que será exibido antes do Bloco de Comentário do Facebook."
 msgstr "Digite o código HTML que será exibido antes do Bloco de Comentário do Facebook."
 
-#: To Comments Facebook.php:101
+#: to-comments-facebook.php:114
 #@ tcf
 msgid "Código HTML exibido DEPOIS"
 msgstr "Código HTML exibido DEPOIS"
 
-#: To Comments Facebook.php:102
+#: to-comments-facebook.php:115
 #@ tcf
 msgid "Digite o código HTML que será exibido depois do Bloco de Comentário do Facebook."
 msgstr "Digite o código HTML que será exibido depois do Bloco de Comentário do Facebook."
 
-#: To Comments Facebook.php:117
+#: to-comments-facebook.php:143
 #@ tcf
 msgid "Nova Brazil Agência Interativa"
 msgstr "Nova Brazil Agência Interativa"
 
-#: To Comments Facebook.php:20
+#: to-comments-facebook.php:21
 #@ tcf
 msgid "<h3>Coment&aacute;rios no Facebook</h3>"
 msgstr "<h3>Coment&aacute;rios no Facebook</h3>"
 
-#: To Comments Facebook.php:53
+#: to-comments-facebook.php:60
 #@ tcf
 msgid "Cadastro atualizado com êxito."
 msgstr "Cadastro atualizado com êxito."
 
-#: To Comments Facebook.php:113
+#: to-comments-facebook.php:139
 #@ tcf
 msgid "Salvar alterações"
 msgstr "Salvar alterações"
 
-#: To Comments Facebook.php:117
+#: to-comments-facebook.php:143
 #@ tcf
 msgid "Este plugin é desenvolvido por"
 msgstr "Este plugin é desenvolvido por"
+
+#: to-comments-facebook.php:124
+#@ tcf
+msgid "Relacionar link"
+msgstr "Relacionar link"
+
+#: to-comments-facebook.php:125
+#@ tcf
+msgid "Recomendamos utilizar <u>shotlink</u>."
+msgstr "Recomendamos utilizar <u>shotlink</u>."
 
