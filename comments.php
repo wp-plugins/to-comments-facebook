@@ -30,7 +30,7 @@ else
 </script>
 
 <?
-if($reg['comments_insert'] == 'before')
+if($reg['comments_insert'] == 'after')
   require_once($reg['comments_url_native']);
 ?>
 
@@ -47,6 +47,6 @@ if($reg['comments_insert'] == 'before')
 <?= $reg['comments_afterHTML']; ?>
 
 <?
-if($reg['comments_insert'] == 'after')
+if($reg['comments_insert'] == 'before')
   require_once($reg['comments_url_native']);
 ?>
