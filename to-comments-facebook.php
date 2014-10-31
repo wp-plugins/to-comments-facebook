@@ -4,7 +4,7 @@ Plugin Name: To Comments Facebook
 Plugin URI: 
 Description: Tira o sistema de comentário nativo do WordPress e adiciona o formato de comentários utilizando o Facebook.
 Author: Nova Brazil Agência Interativa
-Version: 1.0.2
+Version: 1.0.3
 Author URI: http://www.novabrazil.art.br
 */
 
@@ -21,6 +21,7 @@ function ToCommentsFacebook_install(){
   $reg['comments_beforeHTML'] = __('<h3>Coment&aacute;rios no Facebook</h3>', 'tcf');
   $reg['comments_afterHTML']  = '';
   $reg['comments_link']  = 'shotlink';
+  $reg['comments_insert']  = 'alone';
   update_option('tcf_config', $reg);
 }
 
@@ -51,10 +52,11 @@ $msg = null;
 if( (!empty($_POST['comments_width'])) || (!empty($_POST['comments_beforeHTML']))){
 
   $reg  = array();
-  $reg['comments_width'] = $_POST['comments_width'];
+  $reg['comments_width']      = $_POST['comments_width'];
   $reg['comments_beforeHTML'] = $_POST['comments_beforeHTML'];
-  $reg['comments_afterHTML'] = $_POST['comments_afterHTML'];
-  $reg['comments_link']  = $_POST['comments_link'];
+  $reg['comments_afterHTML']  = $_POST['comments_afterHTML'];
+  $reg['comments_link']       = $_POST['comments_link'];
+  $reg['comments_insert']     = $_POST['comments_insert'];
 
   update_option('tcf_config', $reg);
   $msg = __('Cadastro atualizado com êxito.', 'tcf');
@@ -67,6 +69,9 @@ function ToCommentsFacebook_conf() {
 
   if(!isset($reg['comments_link'])){
     $reg['comments_link'] = 'permalink';
+  }
+  if(!isset($reg['comments_insert'])){
+    $reg['comments_insert'] = 'alone';
   }
   ?>
 
@@ -132,6 +137,20 @@ function ToCommentsFacebook_conf() {
           </td>
         </tr>
 
+        <tr valign="top">
+          <th scope="row">
+            <label for="blogname"><b><?= __('O que exibir de comentário?', 'tcf'); ?></b></label>
+            <p><?= __('Escolha como você deseja exibir no espaço de Comentários do seu blog.', 'tcf'); ?></p>
+          </th>
+          <td>
+            <select name="comments_insert">
+              <option value="before"  <?= ($reg['comments_insert'] == 'before'?'selected':null);?>><?= __('Exibir ANTES do sistema de comentário nativo do blog.', 'tcf'); ?></option>
+              <option value="after" <?= ($reg['comments_insert'] == 'after'?'selected':null);?>><?= __('Exibir DEPOIS do sistema de comentário nativo do blog.', 'tcf'); ?></option>
+              <option value="alone" <?= ($reg['comments_insert'] == 'alone'?'selected':null);?>><?= __('Exibir SOZINHO (não exibir o sistema de comentário nativo do blog).', 'tcf'); ?></option>
+            </select>
+          </td>
+        </tr>
+
         </tbody>
       </table>
 
@@ -154,6 +173,12 @@ function ToCommentsFacebook_conf() {
 add_filter('comments_template', 'no_comments_on_page');
 function no_comments_on_page( $file )
 {
+
+  //registra o link do "Comentário Convencional"
+  $reg = get_option('tcf_config');
+  $reg['comments_url_native'] = $file;
+  update_option('tcf_config', $reg);
+
   $file = dirname( __FILE__ ) . '/comments.php';
   return $file;
 }
