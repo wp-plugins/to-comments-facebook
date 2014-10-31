@@ -40,7 +40,7 @@ if($reg['comments_insert'] == 'after')
 <div id="fb-root"></div>
 
 <script  src="http://connect.facebook.net/en_BR/all.js#fml=1"></script>
-<fb:comments href="<?= $tmf_link; ?>" width="<?= $reg['comments_width']; ?>">
+<fb:comments href="<?= $tmf_link; ?>" width="100%">
 
 </fb:comments>
 

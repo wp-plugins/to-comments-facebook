@@ -4,7 +4,7 @@ Plugin Name: To Comments Facebook
 Plugin URI: 
 Description: Tira o sistema de comentário nativo do WordPress e adiciona o formato de comentários utilizando o Facebook.
 Author: Nova Brazil Agência Interativa
-Version: 1.0.3
+Version: 1.0.4
 Author URI: http://www.novabrazil.art.br
 */
 
@@ -49,10 +49,9 @@ function ToCommentsFacebook_config_page() {
 $msg = null;
 
 //Verifica se é um post e atualiza registro..
-if( (!empty($_POST['comments_width'])) || (!empty($_POST['comments_beforeHTML']))){
+if(!empty($_POST['comments_beforeHTML'])){
 
   $reg  = array();
-  $reg['comments_width']      = $_POST['comments_width'];
   $reg['comments_beforeHTML'] = $_POST['comments_beforeHTML'];
   $reg['comments_afterHTML']  = $_POST['comments_afterHTML'];
   $reg['comments_link']       = $_POST['comments_link'];
@@ -95,14 +94,6 @@ function ToCommentsFacebook_conf() {
 
       <table class="form-table">
         <tbody>
-        <tr valign="top">
-          <th scope="row">
-            <label for="blogname"><b><?= __('Largura do Bloco', 'tcf'); ?></b></label>
-          </th>
-          <td>
-            <input id="comments_width" class="small-text" type="text" value="<?= $reg['comments_width']; ?>" name="comments_width"> pixels
-          </td>
-        </tr>
 
         <tr valign="top">
           <th scope="row">
