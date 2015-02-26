@@ -7,7 +7,8 @@ Tested up to: 4.1.1
 Stable tag: 1.0.5
 
 == Description ==
-Adiciona com muita facilidade e simplicidade o Sistema de Comentários do Facebook.
+Adicione o Sistema de Cometários do Facebook com muita facilidade em seu site.
+Com um painel de configuração simples e intuitivo, escolha qual melhor opção para seu site.
 
 Disponível nos **Idiomas**:
 *   Português (Brasil)
