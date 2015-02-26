@@ -3,7 +3,7 @@ Contributors: tihhgoncalves, bugotech
 Donate link:http://goo.gl/glsRg
 Tags: comments, facebook, comentários, hide
 Requires at least: 3.0
-Tested up to: 4.0
+Tested up to: 4.1.1
 Stable tag: 1.0.5
 
 == Description ==
