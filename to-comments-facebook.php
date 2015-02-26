@@ -61,6 +61,7 @@ if(!empty($_POST['comments_beforeHTML'])){
   $msg = __('Cadastro atualizado com êxito.', 'tcf');
 
 }
+
 function ToCommentsFacebook_conf() {
   global $reg, $msg;
 
@@ -145,14 +146,18 @@ function ToCommentsFacebook_conf() {
         </tbody>
       </table>
 
-      <p class="submit">
+
+     <p class="submit">
         <input id="submit" class="button button-primary" type="submit" value="<?= __('Salvar alterações', 'tcf'); ?>" name="submit">
       </p>
     </form>
 
-    <div><?= __('Este plugin é desenvolvido por', 'tcf'); ?> <a href="http://www.novabrazil.art.br" target="_blank" title="<?= __('Nova Brazil Agência Interativa', 'tcf'); ?>"><?= __('Nova Brazil Agência Interativa', 'tcf'); ?></a>.</div>
 
-  </div>
+   <p><?= __('Este plugin é desenvolvido por', 'tcf'); ?> <a href="http://www.novabrazil.art.br" target="_blank" title="<?= __('Nova Brazil Agência Interativa', 'tcf'); ?>"><?= __('Nova Brazil Agência Interativa', 'tcf'); ?></a>.</p>
+    <p><?= __('Contribuia com o desenvolvimento enviando suas ideias para', 'tcf'); ?> <a href="mailto:suporte@novabrazil.art.br?subject=<?= __('Ajude-me com o plugin To Comments Facebook', 'tcf'); ?>">suporte@novabrazil.art.br</a>.</p>
+
+
+ </div>
 <?php
 }
 
@@ -166,11 +171,13 @@ function no_comments_on_page( $file )
 {
 
   //registra o link do "Comentário Convencional"
-  $reg = get_option('tcf_config');
+
+$reg = get_option('tcf_config');
   $reg['comments_url_native'] = $file;
   update_option('tcf_config', $reg);
 
-  $file = dirname( __FILE__ ) . '/comments.php';
+
+ $file = dirname( __FILE__ ) . '/comments.php';
   return $file;
 }
 
