@@ -18,6 +18,8 @@ Disponível nos **Idiomas**:
 == Precisamos da sua ajuda! ==
 Precisamos de sua ajuda para fazermos uma extensão ainda mais bacana! Envie suas ideias em http://suporte.novabrazil.art.br (ou um e-mail para suporte@novabrazil.art.br) que lhe atenderemos com o maior prazer.
 
+
+
 == Installation ==
 1.  Carregue o plugin em seu blog e Ative-o.
 2.  Ativando o plugin automaticamente o Sistema de Comentário do Facebook é adicionado.
